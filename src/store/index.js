@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import user from './moudle/user'
+import getters from './getters'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -10,6 +11,8 @@ export default new Vuex.Store({
   },
   actions: {
   },
+  getters,
   modules: {
+    user
   }
 })
